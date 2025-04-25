@@ -50,7 +50,7 @@ public class GUI_1 {
         frame.add(btnCalculate);
 
         JTextArea resultArea = new JTextArea();
-        resultArea.setBounds(50, 180, 600, 80);
+        resultArea.setBounds(50, 180, 670, 80);
         resultArea.setEditable(false);
         frame.add(resultArea);
 
@@ -71,9 +71,10 @@ public class GUI_1 {
                     else if (rata < 80) grade = "B";
                     else grade = "A";
 
-                    resultArea.setText("====================================================================================\n" 
-                            + "NIM\t\tNama\t\tUTS\tUAS\tRata\tGrade\n" + "====================================================================================\n" 
-                            + nim + "\t" + nama + "\t" + uts + "\t" + uas + "\t" + rata + "\t    " + grade + "\n");
+                    resultArea.setText("==============================================================================================\n" 
+                            + "NIM\t\tNama\t\tUTS\tUAS\tRata\tGrade\n" + 
+                            "==============================================================================================\n"
+                            + nim + "\t" + "\t" + nama + "\t" + "\t" + uts + "\t" + uas + "\t" + rata + "\t" + grade + "\n");
 
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(frame, "Please enter valid numeric values for UTS and UAS", "Input Error", JOptionPane.ERROR_MESSAGE);
